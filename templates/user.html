@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="individualusercontainer">
+        <h1>User {{individual_user.id}}</h1>
+        <p>Full Name: {{individual_user.first_name}} {{individual_user.last_name}}</p>
+        <p>Email: {{individual_user.email}}</p>
+        <p>Last Updated At: {{individual_user.updated_at}}</p>
+        <a href="/users">Home</a>
+        <a href="/users/{{individual_user.id}}/edit">Edit</a>
+        <a href="/users/{{individual_user.id}}/delete">Delete</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: rgb(211, 211, 211);
+}
+
+.homepagecontainer, .alluserscontainer, .individualusercontainer, .editusercontainer {
+    margin-left: 50px;
+}
+
+.showlink {
+    margin-left: 20px;
+}
